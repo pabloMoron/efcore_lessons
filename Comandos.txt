@@ -1,0 +1,15 @@
+//Para instalar la herramienta de consola de manera global
+dotnet tool install --global dotnet-ef
+
+//Para actualizar la herramienta de consola de manera global
+dotnet tool update --global dotnet-ef
+
+//Verificar instalacion
+dotnet ef
+
+//Crea un DBContext que representa el modelo de la conexion indicada
+Scaffold-DbContext -Connection "{connection_string}" -Provider "Microsoft.EntityFrameworkCore.SQLServer" -outputdir {directorio_salida} -context {context}
+
+add-migration {name}
+
+update-database
