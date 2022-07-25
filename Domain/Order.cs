@@ -11,10 +11,10 @@ namespace Domain
         /// <summary>
         /// Para la PK entity framework lo identifica con el nombre de la clase seguido de Id
         /// </summary>
-        public string OrderId { get; set; }
-        public Client? Client { get; set; }
-        public decimal Iva { get; set; }
-        public decimal SubTotal { get; set; }
-        public decimal Total { get; set; }
+        public string OrderId { get; private set; }
+        public Client? Client { get; private set; }
+        public decimal Iva { get; private set; }
+        public decimal SubTotal { get; private set; }
+        public decimal Total { get; private set; }
     }
 }

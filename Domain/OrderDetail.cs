@@ -8,14 +8,13 @@ namespace Domain
 {
     public class OrderDetail
     {
-        public int OrderDetailId { get; set; }
-        public Product Product { get; set; }
-        public Order Order { get; set; }
-        public decimal UnitPrice { get; set; }
-        public decimal Quantity { get; set; }
-        public decimal Iva { get; set; }
-        public decimal SubTotal { get; set; }
-        public decimal Total { get; set; }
-
+        public int OrderDetailId { get; private set; }
+        public Product Product { get; private set; }
+        public Order Order { get; private set; }
+        public decimal UnitPrice { get; private set; }
+        public decimal Quantity { get; private set; }
+        public decimal Iva { get; private set; }
+        public decimal SubTotal { get; private set; }
+        public decimal Total { get; private set; }
     }
 }

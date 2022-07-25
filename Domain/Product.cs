@@ -8,9 +8,9 @@ namespace Domain
 {
     public class Product
     {
-        public int ProductId { get; set; }
-        public string Name { get; set; }
-        public decimal Price { get; set; }
+        public int ProductId { get; private set; }
+        public string Name { get; private set; }
+        public decimal Price { get; private set; }
 
     }
 }
